@@ -1,7 +1,3 @@
-* {
-    border: solid red 1px; 
-}
-
 html, body {
     height: 100%;
     margin: 0;
@@ -17,6 +13,7 @@ html, body {
     flex: 1;
     border: 0px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 5%;
@@ -26,9 +23,9 @@ html, body {
 
 .sketchContainer {
     flex: 1 1 0;
-    margin: 60px 60px 150px 60px;
-    width: 960px;
-    height: 600px;
+    margin: 0px 60px 20px 60px;
+    min-width: 960px;
+    min-height: 600px;
     border: 0px;
     display: flex;
     align-items: start;
@@ -38,7 +35,7 @@ html, body {
 .gridSquare {
     flex: 1;
     min-width: calc(100% / 16);
-    min-height: calc(100% / 10);
+    min-height: calc(100% / 16);
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -46,6 +43,31 @@ html, body {
     background-color: white;
 }
 
-.gridSquare:hover {
+.gridSquareOn {
     background-color: gray;
-  }
+}
+
+.gridSelector {
+    min-height: 20px;
+    margin: 0px 0px 20px 0px;
+}
+
+#gridSelection {
+    font-size: 20px;
+    font-weight: bold;
+    color: #FF10F0;
+    cursor: pointer;
+    background-color: midnightblue;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.Title {
+    font-family: Fantasy, Arial, Helvetica, sans-serif;
+    font-size: 41px;
+    font-weight: bold;
+    color: midnightblue;
+    min-height: 20px;
+    margin: 10px 0px 0px 0px;
+}
+
